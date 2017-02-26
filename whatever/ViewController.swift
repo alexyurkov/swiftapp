@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    
+    @IBAction func buttonPushed(_ sender: Any) {
+        textLabel.text = "SUPER BUTTON IN ACTION!"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
